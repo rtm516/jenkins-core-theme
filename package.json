@@ -6,9 +6,15 @@
     "type": "git",
     "url": "https://github.com/jenkins-contrib-themes/jenkins-core-theme"
   },
+  "scripts": {
+    "test": "lessc --modify-var='core_theme_path=../images/' less/images.less tmp/images.css"
+  },
   "keywords": [
     "jenkins theme"
   ],
   "author": "Afonso F",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "less": "^3.10.0"
+  }
 }
